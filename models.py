@@ -32,8 +32,8 @@ class Perfil_Vip(Perfil):
 	'Classe padrão para perfis de usuários vips'
 
 	def __init__(self, nome, telefone, empresa, apelido=''):
-		super(PerfilVip, self).__init__(nome, telefone, empresa)
+		super(Perfil_Vip, self).__init__(nome, telefone, empresa)
 		self.apelido = apelido
 
 	def obter_creditos(self):
-		return super(PerfilVip, self).obter_curtidas() * 10.0
+		return super(Perfil_Vip, self).obter_curtidas() * 10.0
